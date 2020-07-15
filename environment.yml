@@ -1,0 +1,16 @@
+name: pyhep-demo
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - numpy
+  - scipy
+  - iminuit
+  - tensorflow>=2.0
+  - tensorflow-probability
+  - zfit
+  - asdf
+  - matplotlib
+  - pip:
+    - hepstats
+    - mplhep
