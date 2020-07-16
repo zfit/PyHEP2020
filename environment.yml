@@ -10,6 +10,7 @@ dependencies:
   - tensorflow-probability
   - asdf
   - matplotlib
+  - numba
   - pip
   - pip:
     - progressbar2
