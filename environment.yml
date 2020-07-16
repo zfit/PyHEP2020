@@ -6,10 +6,11 @@ dependencies:
   - numpy
   - scipy
   - iminuit
-  - tensorflow>=2.0
+  - tensorflow>=2.2
   - tensorflow-probability
   - asdf
   - matplotlib
+  - numba
   - pip
   - pip:
     - progressbar2
