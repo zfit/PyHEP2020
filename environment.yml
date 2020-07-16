@@ -14,7 +14,7 @@ dependencies:
   - pip
   - pip:
     - progressbar2
-    - zfit
+    - git+https://github.com/zfit/zfit
     - hepstats
     - mplhep
     - particle
