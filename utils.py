@@ -123,3 +123,19 @@ def plotlimit(ul, alpha=0.05, CLs=True, ax=None):
     ax.legend(loc="best", fontsize=14)
 
     return ax
+
+
+def one_minus_cl_plot(ci, alpha=[0.32], ax=None):
+
+    x = ci.poinull.values
+    pvalues = ci.pvalues()
+
+    if ax is None:
+        ax = plt.gca()
+
+    ax.plot(x, pvalues, ".--")
+    for a in alpha:
+        ax.axhline(a, color="red", label="$\\alpha = " + str(a) + "$")
+    ax.set_ylabel("1-CL")
+
+    return ax
